@@ -1,0 +1,15 @@
+# Shared defaults inherited by experiment configs.
+seed: 1234
+device: cpu
+seq_len: 32
+paths:
+  data_dir: data
+  results_dir: results
+  metrics_dir: results/metrics
+  ckpt_dir: results/checkpoints
+  log_dir: results/logs
+  fig_dir: paper/figures
+  tab_dir: paper/tables
+eval:
+  ae_quantile: 0.95
+  calibration_bins: 15

@@ -1,0 +1,11 @@
+model: autoencoder
+params:
+  latent_dim: 16
+  hidden: 128
+  dropout: 0.0
+train:
+  epochs: 60
+  lr: 0.001
+  batch_size: 64
+  weight_decay: 0.00001
+  patience: 10

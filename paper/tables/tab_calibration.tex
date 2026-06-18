@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Expected calibration error (ECE, lower is better) of the closed-set detectors across domains. Calibration degrades under shift, motivating the trust layer.}
+\label{tab:calibration}
+\begin{tabular}{lcccc}
+\toprule
+Model & clean & drift & asym & unknown \\
+\midrule
+Transformer & 0.0001 & 0.3238 & 0.7608 & 0.5072 \\
+LSTM & 0.0006 & 0.1347 & 0.8298 & 0.6363 \\
+QLSTM & 0.0002 & 0.3044 & 0.5338 & 0.3961 \\
+\bottomrule
+\end{tabular}
+\end{table}

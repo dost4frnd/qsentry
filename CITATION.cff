@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: "QSentry: A Telemetry-Driven Intelligent Security Layer for Resilient Quantum Communication Networks"
+message: "If you use this software or benchmark, please cite it."
+type: software
+authors:
+  - family-names: "Author"
+    given-names: "First"
+  - family-names: "Author"
+    given-names: "Second"
+version: "1.0.0"
+date-released: "2026-06-17"
+license: MIT
+keywords:
+  - quantum key distribution
+  - anomaly detection
+  - quantum machine learning
+  - domain shift
+  - calibration

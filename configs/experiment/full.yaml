@@ -1,0 +1,40 @@
+# Full publication run. Produces the headline numbers and all figures/tables.
+# Reproduce with: bash scripts/run_all.sh configs/experiment/full.yaml
+seed: 1234
+device: cpu
+seq_len: 32
+paths:
+  data_dir: data
+  results_dir: results
+  metrics_dir: results/metrics
+  ckpt_dir: results/checkpoints
+  log_dir: results/logs
+  fig_dir: paper/figures
+  tab_dir: paper/tables
+
+domain_configs:
+  clean: data/clean.yaml
+  drift: data/drift.yaml
+  asym: data/asym.yaml
+  unknown: data/unknown.yaml
+
+train_domain: clean        # supervised detectors are trained on this domain
+
+model_configs:
+  transformer: models/transformer.yaml
+  lstm: models/lstm.yaml
+  qlstm: models/qlstm.yaml
+  autoencoder: models/autoencoder.yaml
+
+robustness:
+  reference_model: transformer
+  config: data/severity_sweep.yaml
+
+interpret:
+  reference_model: transformer
+  tsne_max_samples: 1500
+
+eval:
+  ae_quantile: 0.95
+  calibration_bins: 15
+  channel_importance_repeats: 5

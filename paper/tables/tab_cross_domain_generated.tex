@@ -1,0 +1,14 @@
+\begin{table}[t]
+\centering
+\caption{Cross-domain generalisation (macro-F1). Models are trained on \texttt{clean} and evaluated on each domain's test split.}
+\label{tab:cross-domain}
+\begin{tabular}{lcccc}
+\toprule
+Model & clean & drift & asym & unknown \\
+\midrule
+Transformer & 1.0000 & 0.6128 & 0.1524 & 0.4482 \\
+LSTM & 1.0000 & 0.8242 & 0.0871 & 0.3250 \\
+QLSTM & 1.0000 & 0.5194 & 0.1585 & 0.3320 \\
+\bottomrule
+\end{tabular}
+\end{table}

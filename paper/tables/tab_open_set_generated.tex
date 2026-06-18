@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Open-set anomaly detection (autoencoder, one-class). The threshold $\tau$ is the 95th percentile of normal-train reconstruction error.}
+\label{tab:open-set}
+\begin{tabular}{lcccc}
+\toprule
+Domain & Avg.\ Prec.\ & F1\,@\,$\tau$ & ROC-AUC & $\tau$ \\
+\midrule
+clean & 1.0000 & 0.9877 & 0.9997 & 180.8814 \\
+drift & 0.9874 & 0.9333 & 0.9328 & 180.8814 \\
+asym & 0.8888 & 0.9333 & 0.5522 & 180.8814 \\
+unknown & 0.9311 & 0.9650 & 0.4924 & 180.8814 \\
+\bottomrule
+\end{tabular}
+\end{table}

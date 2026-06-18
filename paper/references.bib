@@ -1,0 +1,421 @@
+% =====================================================================
+%  References for:
+%  "QSentry: A Telemetry-Driven Intelligent Security Layer for
+%   Resilient Quantum Communication Networks"
+%  Style: splncs04
+%  NOTE: a few entries (esp. recent attack papers) are best-effort and
+%  should be reconciled against the authoritative versions before
+%  camera-ready.
+% =====================================================================
+
+% ---- QKD protocols & security ----
+@inproceedings{bb84,
+  author    = {Bennett, Charles H. and Brassard, Gilles},
+  title     = {Quantum Cryptography: Public Key Distribution and Coin Tossing},
+  booktitle = {Proc. IEEE Int. Conf. on Computers, Systems and Signal Processing},
+  pages     = {175--179},
+  year      = {1984}
+}
+
+@article{pns,
+  author  = {Brassard, Gilles and L{\"u}tkenhaus, Norbert and Mor, Tal and Sanders, Barry C.},
+  title   = {Limitations on Practical Quantum Cryptography},
+  journal = {Physical Review Letters},
+  volume  = {85},
+  number  = {6},
+  pages   = {1330--1333},
+  year    = {2000},
+  doi     = {10.1103/PhysRevLett.85.1330}
+}
+
+@article{hwang,
+  author  = {Hwang, Won-Young},
+  title   = {Quantum Key Distribution with High Loss: Toward Global Secure Communication},
+  journal = {Physical Review Letters},
+  volume  = {91},
+  number  = {5},
+  pages   = {057901},
+  year    = {2003},
+  doi     = {10.1103/PhysRevLett.91.057901}
+}
+
+@article{lo2005,
+  author  = {Lo, Hoi-Kwong and Ma, Xiongfeng and Chen, Kai},
+  title   = {Decoy State Quantum Key Distribution},
+  journal = {Physical Review Letters},
+  volume  = {94},
+  number  = {23},
+  pages   = {230504},
+  year    = {2005},
+  doi     = {10.1103/PhysRevLett.94.230504}
+}
+
+@article{mdi,
+  author  = {Lo, Hoi-Kwong and Curty, Marcos and Qi, Bing},
+  title   = {Measurement-Device-Independent Quantum Key Distribution},
+  journal = {Physical Review Letters},
+  volume  = {108},
+  number  = {13},
+  pages   = {130503},
+  year    = {2012},
+  doi     = {10.1103/PhysRevLett.108.130503}
+}
+
+@article{tfqkd,
+  author  = {Lucamarini, Marco and Yuan, Zhiliang L. and Dynes, James F. and Shields, Andrew J.},
+  title   = {Overcoming the Rate--Distance Limit of Quantum Key Distribution without Quantum Repeaters},
+  journal = {Nature},
+  volume  = {557},
+  pages   = {400--403},
+  year    = {2018},
+  doi     = {10.1038/s41586-018-0066-6}
+}
+
+@article{xu2020secure,
+  author  = {Xu, Feihu and Ma, Xiongfeng and Zhang, Qiang and Lo, Hoi-Kwong and Pan, Jian-Wei},
+  title   = {Secure Quantum Key Distribution with Realistic Devices},
+  journal = {Reviews of Modern Physics},
+  volume  = {92},
+  number  = {2},
+  pages   = {025002},
+  year    = {2020},
+  doi     = {10.1103/RevModPhys.92.025002}
+}
+
+@article{pirandola2020advances,
+  author  = {Pirandola, Stefano and Andersen, Ulrik L. and Banchi, Leonardo and others},
+  title   = {Advances in Quantum Cryptography},
+  journal = {Advances in Optics and Photonics},
+  volume  = {12},
+  number  = {4},
+  pages   = {1012--1236},
+  year    = {2020},
+  doi     = {10.1364/AOP.361502}
+}
+
+% ---- Implementation attacks ----
+@article{lydersen,
+  author  = {Lydersen, Lars and Wiechers, Carlos and Wittmann, Christoffer and Elser, Dominique and Skaar, Johannes and Makarov, Vadim},
+  title   = {Hacking Commercial Quantum Cryptography Systems by Tailored Bright Illumination},
+  journal = {Nature Photonics},
+  volume  = {4},
+  pages   = {686--689},
+  year    = {2010},
+  doi     = {10.1038/nphoton.2010.214}
+}
+
+@article{makarov,
+  author  = {Makarov, Vadim},
+  title   = {Controlling Passively Quenched Single Photon Detectors by Bright Light},
+  journal = {New Journal of Physics},
+  volume  = {11},
+  pages   = {065003},
+  year    = {2009},
+  doi     = {10.1088/1367-2630/11/6/065003}
+}
+
+@article{gisin,
+  author  = {Gisin, Nicolas and Fasel, Sylvain and Kraus, Barbara and Zbinden, Hugo and Ribordy, Gr{\'e}goire},
+  title   = {Trojan-Horse Attacks on Quantum-Key-Distribution Systems},
+  journal = {Physical Review A},
+  volume  = {73},
+  number  = {2},
+  pages   = {022320},
+  year    = {2006},
+  doi     = {10.1103/PhysRevA.73.022320}
+}
+
+@article{jain,
+  author  = {Jain, Nitin and Stiller, Birgit and Khan, Imran and Elser, Dominique and Marquardt, Christoph and Leuchs, Gerd},
+  title   = {Attacks on Practical Quantum Key Distribution Systems (and How to Prevent Them)},
+  journal = {Contemporary Physics},
+  volume  = {57},
+  number  = {3},
+  pages   = {366--387},
+  year    = {2016},
+  doi     = {10.1080/00107514.2016.1148333}
+}
+
+@article{li2011,
+  author  = {Li, Hong-Wei and Wang, Shuang and Huang, Jing-Zheng and others},
+  title   = {Attacking a Practical Quantum-Key-Distribution System with Wavelength-Dependent Beam-Splitter and Multiwavelength Sources},
+  journal = {Physical Review A},
+  volume  = {84},
+  number  = {6},
+  pages   = {062308},
+  year    = {2011},
+  doi     = {10.1103/PhysRevA.84.062308}
+}
+
+@article{peng,
+  author  = {Peng, Yang and others},
+  title   = {Wavelength-Switching Attack on Practical Twin-Field Quantum Key Distribution Systems},
+  journal = {npj Quantum Information},
+  year    = {2025},
+  note    = {Best-effort citation; reconcile with the authoritative version before camera-ready.}
+}
+
+% ---- Quantum networks ----
+@article{wehner2018internet,
+  author  = {Wehner, Stephanie and Elkouss, David and Hanson, Ronald},
+  title   = {Quantum Internet: A Vision for the Road Ahead},
+  journal = {Science},
+  volume  = {362},
+  number  = {6412},
+  pages   = {eaam9288},
+  year    = {2018},
+  doi     = {10.1126/science.aam9288}
+}
+
+@article{chen2021integrated,
+  author  = {Chen, Yu-Ao and Zhang, Qiang and Chen, Teng-Yun and others},
+  title   = {An Integrated Space-to-Ground Quantum Communication Network over 4,600 Kilometres},
+  journal = {Nature},
+  volume  = {589},
+  pages   = {214--219},
+  year    = {2021},
+  doi     = {10.1038/s41586-020-03093-8}
+}
+
+% ---- Sequence models ----
+@inproceedings{vaswani2017attention,
+  author    = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia},
+  title     = {Attention Is All You Need},
+  booktitle = {Advances in Neural Information Processing Systems},
+  volume    = {30},
+  year      = {2017}
+}
+
+@article{hochreiter1997lstm,
+  author  = {Hochreiter, Sepp and Schmidhuber, J{\"u}rgen},
+  title   = {Long Short-Term Memory},
+  journal = {Neural Computation},
+  volume  = {9},
+  number  = {8},
+  pages   = {1735--1780},
+  year    = {1997},
+  doi     = {10.1162/neco.1997.9.8.1735}
+}
+
+% ---- Quantum machine learning ----
+@inproceedings{qlstm,
+  author    = {Chen, Samuel Yen-Chi and Yoo, Shinjae and Fang, Yao-Lung L.},
+  title     = {Quantum Long Short-Term Memory},
+  booktitle = {ICASSP 2022 -- IEEE Int. Conf. on Acoustics, Speech and Signal Processing},
+  pages     = {8622--8626},
+  year      = {2022},
+  doi       = {10.1109/ICASSP43922.2022.9747369}
+}
+
+@article{chen,
+  author  = {Chen, Samuel Yen-Chi and Yoo, Shinjae and Fang, Yao-Lung L.},
+  title   = {Quantum Long Short-Term Memory},
+  journal = {arXiv preprint arXiv:2009.01783},
+  year    = {2020}
+}
+
+@article{rebentrost2014quantum,
+  author  = {Rebentrost, Patrick and Mohseni, Masoud and Lloyd, Seth},
+  title   = {Quantum Support Vector Machine for Big Data Classification},
+  journal = {Physical Review Letters},
+  volume  = {113},
+  number  = {13},
+  pages   = {130503},
+  year    = {2014},
+  doi     = {10.1103/PhysRevLett.113.130503}
+}
+
+@article{schuld2019quantum,
+  author  = {Schuld, Maria and Killoran, Nathan},
+  title   = {Quantum Machine Learning in Feature Hilbert Spaces},
+  journal = {Physical Review Letters},
+  volume  = {122},
+  number  = {4},
+  pages   = {040504},
+  year    = {2019},
+  doi     = {10.1103/PhysRevLett.122.040504}
+}
+
+@article{havlicek2019supervised,
+  author  = {Havl{\'\i}{\v{c}}ek, Vojt{\v{e}}ch and C{\'o}rcoles, Antonio D. and Temme, Kristan and Harrow, Aram W. and Kandala, Abhinav and Chow, Jerry M. and Gambetta, Jay M.},
+  title   = {Supervised Learning with Quantum-Enhanced Feature Spaces},
+  journal = {Nature},
+  volume  = {567},
+  pages   = {209--212},
+  year    = {2019},
+  doi     = {10.1038/s41586-019-0980-2}
+}
+
+@article{mcclean2018barren,
+  author  = {McClean, Jarrod R. and Boixo, Sergio and Smelyanskiy, Vadim N. and Babbush, Ryan and Neven, Hartmut},
+  title   = {Barren Plateaus in Quantum Neural Network Training Landscapes},
+  journal = {Nature Communications},
+  volume  = {9},
+  pages   = {4812},
+  year    = {2018},
+  doi     = {10.1038/s41467-018-07090-4}
+}
+
+@article{data_reuploading,
+  author  = {P{\'e}rez-Salinas, Adri{\'a}n and Cervera-Lierta, Alba and Gil-Fuster, Elies and Latorre, Jos{\'e} I.},
+  title   = {Data Re-uploading for a Universal Quantum Classifier},
+  journal = {Quantum},
+  volume  = {4},
+  pages   = {226},
+  year    = {2020},
+  doi     = {10.22331/q-2020-02-06-226}
+}
+
+@article{cerezo2021variational,
+  author  = {Cerezo, Marco and Arrasmith, Andrew and Babbush, Ryan and Benjamin, Simon C. and Endo, Suguru and Fujii, Keisuke and McClean, Jarrod R. and Mitarai, Kosuke and Yuan, Xiao and Cincio, Lukasz and Coles, Patrick J.},
+  title   = {Variational Quantum Algorithms},
+  journal = {Nature Reviews Physics},
+  volume  = {3},
+  pages   = {625--644},
+  year    = {2021},
+  doi     = {10.1038/s42254-021-00348-9}
+}
+
+@article{bergholm2018pennylane,
+  author  = {Bergholm, Ville and Izaac, Josh and Schuld, Maria and Gogolin, Christian and others},
+  title   = {PennyLane: Automatic Differentiation of Hybrid Quantum-Classical Computations},
+  journal = {arXiv preprint arXiv:1811.04968},
+  year    = {2018}
+}
+
+@article{larocca2024review,
+  author  = {Larocca, Mart{\'\i}n and Thanasilp, Supanut and Wang, Samson and Sharma, Kunal and Biamonte, Jacob and Coles, Patrick J. and Cincio, Lukasz and McClean, Jarrod R. and Holmes, Zo{\"e} and Cerezo, M.},
+  title   = {A Review of Barren Plateaus in Variational Quantum Computing},
+  journal = {arXiv preprint arXiv:2405.00781},
+  year    = {2024}
+}
+
+@article{gilfuster2024generalization,
+  author  = {Gil-Fuster, Elies and Eisert, Jens and Bravo-Prieto, Carlos},
+  title   = {Understanding Quantum Machine Learning Also Requires Rethinking Generalization},
+  journal = {Nature Communications},
+  volume  = {15},
+  pages   = {2277},
+  year    = {2024},
+  doi     = {10.1038/s41467-024-45882-z}
+}
+
+@article{haug2024qfim,
+  author  = {Haug, Tobias and Kim, M. S.},
+  title   = {Generalization of Quantum Machine Learning Models Using Quantum Fisher Information Metric},
+  journal = {Physical Review Letters},
+  volume  = {133},
+  number  = {5},
+  pages   = {050603},
+  year    = {2024},
+  doi     = {10.1103/PhysRevLett.133.050603}
+}
+
+@article{lu2020quantum,
+  author  = {Lu, Sirui and Duan, Lu-Ming and Deng, Dong-Ling},
+  title   = {Quantum Adversarial Machine Learning},
+  journal = {Physical Review Research},
+  volume  = {2},
+  number  = {3},
+  pages   = {033212},
+  year    = {2020},
+  doi     = {10.1103/PhysRevResearch.2.033212}
+}
+
+@article{lu,
+  author  = {Liu, Yunchao and Arunachalam, Srinivasan and Temme, Kristan},
+  title   = {A Rigorous and Robust Quantum Speed-up in Supervised Machine Learning},
+  journal = {Nature Physics},
+  volume  = {17},
+  pages   = {1013--1017},
+  year    = {2021},
+  doi     = {10.1038/s41567-021-01287-z}
+}
+
+@article{corli2024review,
+  author  = {Corli, Sebastiano and Moro, Lorenzo and Dragoni, Daniele and Dispenza, Massimiliano and Prati, Enrico},
+  title   = {Quantum Machine Learning Algorithms for Anomaly Detection: A Review},
+  journal = {arXiv preprint arXiv:2408.11047},
+  year    = {2024}
+}
+
+% ---- Trustworthy ML: calibration, OOD, DET ----
+@inproceedings{guo2017calibration,
+  author    = {Guo, Chuan and Pleiss, Geoff and Sun, Yu and Weinberger, Kilian Q.},
+  title     = {On Calibration of Modern Neural Networks},
+  booktitle = {Int. Conf. on Machine Learning (ICML)},
+  pages     = {1321--1330},
+  year      = {2017}
+}
+
+@inproceedings{hendrycks2017baseline,
+  author    = {Hendrycks, Dan and Gimpel, Kevin},
+  title     = {A Baseline for Detecting Misclassified and Out-of-Distribution Examples in Neural Networks},
+  booktitle = {Int. Conf. on Learning Representations (ICLR)},
+  year      = {2017}
+}
+
+@inproceedings{naeini2015ece,
+  author    = {Naeini, Mahdi Pakdaman and Cooper, Gregory F. and Hauskrecht, Milos},
+  title     = {Obtaining Well Calibrated Probabilities Using Bayesian Binning},
+  booktitle = {AAAI Conference on Artificial Intelligence},
+  pages     = {2901--2907},
+  year      = {2015}
+}
+
+@inproceedings{martin1997det,
+  author    = {Martin, Alvin and Doddington, George and Kamm, Terri and Ordowski, Mark and Przybocki, Mark},
+  title     = {The {DET} Curve in Assessment of Detection Task Performance},
+  booktitle = {Proc. Eurospeech},
+  pages     = {1895--1898},
+  year      = {1997}
+}
+
+@article{gebru2021datasheets,
+  author  = {Gebru, Timnit and Morgenstern, Jamie and Vecchione, Briana and Vaughan, Jennifer Wortman and Wallach, Hanna and Daum{\'e} III, Hal and Crawford, Kate},
+  title   = {Datasheets for Datasets},
+  journal = {Communications of the ACM},
+  volume  = {64},
+  number  = {12},
+  pages   = {86--92},
+  year    = {2021},
+  doi     = {10.1145/3458723}
+}
+
+@article{an2015variational,
+  author  = {An, Jinwon and Cho, Sungzoon},
+  title   = {Variational Autoencoder Based Anomaly Detection Using Reconstruction Probability},
+  journal = {Special Lecture on IE, Seoul National University},
+  volume  = {2},
+  pages   = {1--18},
+  year    = {2015}
+}
+
+% ---- Foundational / context ----
+@article{preskill2018quantum,
+  author  = {Preskill, John},
+  title   = {Quantum Computing in the {NISQ} Era and Beyond},
+  journal = {Quantum},
+  volume  = {2},
+  pages   = {79},
+  year    = {2018},
+  doi     = {10.22331/q-2018-08-06-79}
+}
+
+@article{shor1999polynomial,
+  author  = {Shor, Peter W.},
+  title   = {Polynomial-Time Algorithms for Prime Factorization and Discrete Logarithms on a Quantum Computer},
+  journal = {SIAM Journal on Computing},
+  volume  = {26},
+  number  = {5},
+  pages   = {1484--1509},
+  year    = {1997},
+  doi     = {10.1137/S0097539795293172}
+}
+
+@misc{csrcNIST,
+  author       = {{National Institute of Standards and Technology}},
+  title        = {Post-Quantum Cryptography},
+  howpublished = {\url{https://csrc.nist.gov/projects/post-quantum-cryptography}},
+  year         = {2024}
+}

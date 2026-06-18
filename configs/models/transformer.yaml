@@ -1,0 +1,13 @@
+model: transformer
+params:
+  d_model: 64
+  nhead: 4
+  num_layers: 2
+  dim_ff: 128
+  dropout: 0.1
+train:
+  epochs: 40
+  lr: 0.001
+  batch_size: 64
+  weight_decay: 0.00001
+  patience: 8

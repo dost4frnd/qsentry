@@ -1,0 +1,95 @@
+# Fast smoke test (tiny data + tiny models + few epochs). Verifies the whole
+# pipeline end-to-end and produces example figures/tables so the manuscript
+# compiles out of the box. NOT for reporting numbers.
+# Run with: bash scripts/run_smoke.sh
+seed: 1234
+device: cpu
+seq_len: 32
+paths:
+  data_dir: data_smoke
+  results_dir: results_smoke
+  metrics_dir: results_smoke/metrics
+  ckpt_dir: results_smoke/checkpoints
+  log_dir: results_smoke/logs
+  fig_dir: paper/figures
+  tab_dir: paper/tables
+
+train_domain: clean
+
+# Inline tiny domains (override the canonical files).
+domains:
+  clean:
+    name: clean
+    seq_len: 32
+    n_train: 160
+    n_val: 64
+    n_test: 160
+    drift_strength: 0.0
+    asym_strength: 0.0
+    seed: 1234
+  drift:
+    name: drift
+    seq_len: 32
+    n_train: 160
+    n_val: 64
+    n_test: 160
+    drift_strength: 1.0
+    seed: 2234
+  asym:
+    name: asym
+    seq_len: 32
+    n_train: 160
+    n_val: 64
+    n_test: 160
+    asym_strength: 2.0
+    seed: 3234
+  unknown:
+    name: unknown
+    seq_len: 32
+    n_train: 160
+    n_val: 64
+    n_test: 240
+    n_test_normal: 24
+    drift_strength: 1.0
+    asym_strength: 2.0
+    mixed: true
+    include_unknown_in_test: true
+    seed: 4234
+
+# Inline tiny models.
+models:
+  transformer:
+    model: transformer
+    params: {d_model: 32, nhead: 2, num_layers: 1, dim_ff: 48, dropout: 0.1}
+    train: {epochs: 4, lr: 0.002, batch_size: 32, patience: 0}
+  lstm:
+    model: lstm
+    params: {hidden_size: 32, num_layers: 1, dropout: 0.1}
+    train: {epochs: 4, lr: 0.002, batch_size: 32, patience: 0}
+  qlstm:
+    model: qlstm
+    params: {hidden_size: 4, n_qubits: 4, n_layers: 1, diff_method: backprop}
+    train: {epochs: 2, lr: 0.01, batch_size: 16, patience: 0}
+  autoencoder:
+    model: autoencoder
+    params: {latent_dim: 8, hidden: 48, dropout: 0.0}
+    train: {epochs: 6, lr: 0.002, batch_size: 32, patience: 0}
+
+robustness:
+  reference_model: transformer
+  config:
+    n_test: 120
+    seed: 7
+    axes:
+      drift_strength: [0.0, 1.0, 2.0]
+      asym_strength: [0.0, 1.0, 3.0]
+      attack_intensity: [0.5, 1.0, 2.0]
+
+interpret:
+  reference_model: transformer
+  tsne_max_samples: 300
+
+eval:
+  ae_quantile: 0.95
+  calibration_bins: 10
+  channel_importance_repeats: 2

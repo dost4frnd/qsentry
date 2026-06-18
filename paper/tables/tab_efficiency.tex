@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Parameter budget and CPU inference cost (batch size 1). Latency is per telemetry window.}
+\label{tab:efficiency}
+\begin{tabular}{lrrr}
+\toprule
+Model & Params & Latency (ms) & Throughput (win/s) \\
+\midrule
+Transformer & 68,296 & 0.912 & 1096 \\
+LSTM & 20,488 & 0.401 & 2492 \\
+QLSTM & 616 & 117.281 & 9 \\
+Autoencoder & 103,056 & 0.244 & 4099 \\
+\bottomrule
+\end{tabular}
+\end{table}

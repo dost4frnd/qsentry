@@ -1,0 +1,12 @@
+model: lstm
+params:
+  hidden_size: 64
+  num_layers: 1
+  dropout: 0.1
+  bidirectional: false
+train:
+  epochs: 40
+  lr: 0.001
+  batch_size: 64
+  weight_decay: 0.00001
+  patience: 8

@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Domain datasets. All windows share the $T{\times}F = 32{\times}12$ telemetry layout (384 sequence features). The held-out novelty class appears only in the \texttt{unknown} test split.}
+\label{tab:datasets}
+\begin{tabular}{llrrrr}
+\toprule
+Domain & Shift & Train & Val & Test & Total \\
+\midrule
+clean & none & 4480 & 960 & 960 & 6400 \\
+drift & OU phase drift & 4480 & 960 & 960 & 6400 \\
+asym & asymmetric loss & 4480 & 960 & 960 & 6400 \\
+unknown & mixed + novelty & 4480 & 960 & 1760 & 7200 \\
+\bottomrule
+\end{tabular}
+\end{table}

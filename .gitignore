@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+dist/
+build/
+*.egg-info/
+
+# Generated datasets and results (regenerate via scripts/run_all.sh)
+data/
+data_smoke/
+results/
+results_smoke/
+
+# LaTeX build artifacts
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/main.pdf
+
+# Official Springer files (download per paper/README_PAPER.md; not redistributed)
+paper/llncs.cls
+paper/splncs04.bst
+
+# Keep example outputs so the manuscript compiles out of the box:
+!paper/figures/
+!paper/figures/*.pdf
+!paper/tables/
+!paper/tables/*.tex
